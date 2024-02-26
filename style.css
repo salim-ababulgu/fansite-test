@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------NAVBAR--------------------------*/
+header {
+    background: #000;
+    color: #fff;
+    padding: 25px 50px 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-three-celebrities {
+    display: flex;
+}
+
+.container-one-celebrities {
+    margin-left: 25px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+/*-------------------------MAIN--------------------------*/
+/*Bob Marley*/
+.container-presentation-bob_marley {
+    background: url(./image/bob-marley.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-information-bob_marley {
+    margin: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+}
+
+
+/*Michael Jackson*/
+.container-presentation-michael_jackson {
+    background: url(./image/mickeal-jackson.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-information-michael_jackson {
+    margin: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+}
+
+
+/*Lana del Rey*/
+.container-presentation-lana_del_rey {
+    background: url(./image/lana-del-rey.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-information-lana_del_rey {
+    margin: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+}
+
+footer {
+    background: #f1f1f1;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
