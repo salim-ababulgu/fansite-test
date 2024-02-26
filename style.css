@@ -27,7 +27,7 @@ header {
 /*-------------------------MAIN--------------------------*/
 /*Bob Marley*/
 .container-presentation-bob_marley {
-    background: url(./image/bob-marley.jpg);
+    background: url(./image/bob-marley-one-love-3840x2160-13718.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -50,7 +50,7 @@ header {
 
 /*Michael Jackson*/
 .container-presentation-michael_jackson {
-    background: url(./image/mickeal-jackson.jpg);
+    background: url(.//image/michael\ jackson.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -73,7 +73,7 @@ header {
 
 /*Lana del Rey*/
 .container-presentation-lana_del_rey {
-    background: url(./image/lana-del-rey.jpeg);
+    background: url(./image/lana.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
