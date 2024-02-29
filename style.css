@@ -1,42 +1,89 @@
-* {
+*, ::before, ::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+/*Je déclare m-90 pour marger tout les élément à 80%*/
+.m-90 {
+    margin: 0 10%;
 }
 
 /*-------------------------NAVBAR--------------------------*/
+/* nav */
 header {
-    background: #000;
-    color: #fff;
-    padding: 25px 50px 25px 50px;
+    position: fixed;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.navigation-bar {
+    background: #00000080;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 2px solid #fff;
+    padding: 10px;
 }
 
+/* LOGO */
+.logo_link {
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* ul */
 .container-three-celebrities {
     display: flex;
 }
 
+/* li */
 .container-one-celebrities {
     margin-left: 25px;
     list-style-type: none;
     cursor: pointer;
+    /* border-right: #fff 2px solid; */
+}
+
+/* a */
+.link-one-celebrities {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+/* a */
+.link-one-celebrities:hover {
+    color: #adadad;
+    text-decoration: none;
 }
 
 
 /*-------------------------MAIN--------------------------*/
 /*Bob Marley*/
+.title {
+    color: royalblue;
+  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+
 .container-presentation-bob_marley {
-    background: url(./image/bob-marley-one-love-3840x2160-13718.jpg);
+    background: url(./image/BM-portrait.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 3px solid #fff;
 }
 
 .container-information-bob_marley {
@@ -50,7 +97,7 @@ header {
 
 /*Michael Jackson*/
 .container-presentation-michael_jackson {
-    background: url(.//image/michael\ jackson.jpg);
+    background: url(./image/MJ-portrait.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -60,6 +107,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 3px solid #fff;
 }
 
 .container-information-michael_jackson {
@@ -83,6 +131,8 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 3px solid #fff;
+    box-shadow: #000 0 7px 35px 0;
 }
 
 .container-information-lana_del_rey {
@@ -93,9 +143,50 @@ header {
     font-weight: 600;
 }
 
-footer {
+/* Style pour le main avec effet parallax */
+main {
+    position: relative;
+    z-index: 2;
+    background: #F56469;
+    min-height: 1500px; /* Utilise une hauteur minimale pour assurer le défilement */
+    margin-bottom: 350px; /* Marge en bas pour éviter que le footer ne recouvre le contenu */
+    
+  }
+  
+  /* Style pour le footer avec effet parallax */
+  .parallax-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 350px; /* Hauteur du footer */
+    padding: 50px;
     background: #f1f1f1;
-    padding: 10px;
     font-size: 20px;
+    color: #000;
+    z-index: 1; /* Assure que le footer reste en avant-plan */
+  }
+  
+  /* Effet parallax */
+  .parallax-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    transform: translateZ(-1px) scale(1.5); /* Joue avec les valeurs pour ajuster l'effet */
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .copyright {
     text-align: center;
+    margin-top: 10%;
   }
