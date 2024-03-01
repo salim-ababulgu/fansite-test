@@ -70,6 +70,15 @@
 
   
   /* LOGO */
+
+
+  .logo-the_fan {
+    width: 100px;
+    height: auto;
+  }
+  
+
+  
   .logo_link {
       font-size: 25px;
       text-decoration: none;
