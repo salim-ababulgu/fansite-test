@@ -1,0 +1,137 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    flex-wrap: wrap;
+    background-color: #e8e8e8;
+}
+  
+  input[type=text], textarea, input[type=email] {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+    border: solid;
+  }
+  label{margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;}
+  
+  input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #009987;
+  }
+  
+  .container {
+    box-sizing : border-box;
+    border-radius:5px;
+    background-color:#ffffff;
+    padding:60px;
+    width: 100%;
+    max-width: 580px;
+    margin:0 auto;
+    border: solid;
+    padding-top: 100px;
+  }
+  h1  {
+    color: #009987;
+    width: 90%;
+    font-size: 50px;
+    border:solid;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 40px;
+
+  }
+
+  header {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navigation-bar {
+    background: #00000080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+/* LOGO */
+.logo_link {
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo_link{
+  transition: transform 0.3s;
+}
+
+.logo_link:hover{
+  transform: scale(1.25);
+}
+
+
+
+/* ul */
+.container-three-celebrities {
+    display: flex;
+
+}
+
+/* li */
+.container-one-celebrities {
+    margin-left: 25px;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.container-one-celebrities, a{
+  color: white;
+  text-decoration: none;
+}
+
+.container-one-celebrities{
+  transition: transform 0.3s;
+}
+
+.container-one-celebrities:hover {
+  transform: scale(1.15);
+}
+
+
+
+
+
+/* a */
+.link-one-celebrities {
+    color: #fff;
+    text-decoration: none;
+}
+
+.m-90 {
+  margin: 0 10%;
+}
