@@ -11,7 +11,7 @@
             margin: 0;
             padding: 20px;
         }
-        h1, h2, h3 {
+        h1, h2, h3 {commit -m
             margin-top: 0;
         }
         .container {
