@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav */
+header {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.navigation-bar {
+    background: #00000080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+/* LOGO */
+.logo_link {
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* ul */
+.container-three-celebrities {
+    display: flex;
+}
+
+/* li */
+.container-one-celebrities {
+    margin-left: 25px;
+    list-style-type: none;
+    cursor: pointer;
+    border-right: #fff 2px solid;
+}
+
+/* a */
+.link-one-celebrities {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+/* a */
+.link-one-celebrities:hover {
+    color: #adadad;
+    text-decoration: none;
+}
+
+.container-liens-page-Bob-Marley {
+    display: flex;
+}
+
+.container-one-celebrities {
+    margin-left: 25px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: Helvetica;
+    line-height: 1.4em;
+
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Ajuste conforme necessário */
+    gap: 20px; /* Ajuste conforme necessário */
+}
+
+li {
+    padding: 10px;
+}
+
+.container {
+max-width: 1300px; /* Ajuste conforme necessário */
+margin: 20px auto;
+display: flex;
+align-items: left;
+}
+
+
+.m-90 {
+  margin: 0 10%
+}
+
+p {
+flex: 1; /* Ocupa o restante do espaço disponível no contêiner */
+}
+
+.photo-portrait-bob {
+width: 100%;
+}
+
+.photo-debut-page {
+  background-image:
+  linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
+  url('image/BM-portrait.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+}
+
+h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 90px;
+  justify-content: center;
+  font-size: 70px;
+  text-align: center;
+  border: solid;
+  padding-top: 65px;
+  }
+
+  .titre-actualite{
+    background-color: #9aa407;
+  }
+
+  .titre-evenements{
+    background-color: #158f05;
+  }
+
+  .titre-galerie{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .titre-realisations{
+    background-color: #9aa407;
+  }
+
+  .titre-mes-chansons{
+    background-color: #158f05;
+  }
+
+  .titre-liens{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .titre-biographie{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .titre-realisations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-realisation {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .content-realisation {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .img-realisation {
+    width: auto;
+    height: 250px;
+  }
+
+  #exodus{
+    width: 800px;
+    height: 600px;
+  }
+
+/* Galerie ---------------------------------- */
+
+  .container-galerie {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .content-galerie {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .img-galerie {
+    width: auto;
+    height: 250px;
+  }
+
+  #exodus{
+    width: 800px;
+    height: 600px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .news-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: ridge;
+    background-color: rgb(240, 171, 171);
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .news-item {
+    width: 80%;
+    background-color: rgb(210, 210, 210);
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    border: ridge;
+    display: inline;
+    text-align: justify;
+
+  }
+
+  .news-item{
+    transition: transform 0.3s;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+  h3{
+    font-size: 30px;
+    color: #333;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+
+
+.link-container {
+text-align: center;
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+height: 400px;
+width: 100%;
+}
+.Bob1{
+  height: 300px;
+  width: 350px;
+}
+
+.link-container a {
+display: inline-block;
+margin: 10px;
+text-decoration: none;
+color: #333;
+}
+
+.link-container a img {
+max-width: 100%;
+height: auto;
+border: 0; /* Remove a borda padrão de links em algumas navegadores */
+}
+
+.link-container2 {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 400px;
+  width: 100%;
+  }
+
+.Bob2{
+  height: 300px;
+  width: 350px;
+}
+
+p {
+  margin-bottom: 20px; /* Ajuste a quantidade de espaço conforme necessário */
+  margin-left: 20px; /* Ajuste a quantidade de espaço à esquerda conforme necessário */
+  margin-right: 20px; 
+}
