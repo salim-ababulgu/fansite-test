@@ -15,22 +15,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navigation-bar m-90">
-            <a class="logo_link" href="./index.html">The Fan Site</a>
-            <ul class="container-three-celebrities">
-                <li class="container-one-celebrities"><a class="link-one-celebrities" href="#">Bob Marley</a></li>
-                <li class="container-one-celebrities"><a class="link-one-celebrities" href="#">Mickeal Jackson</a></li>
-                <li class="container-one-celebrities"><a class="link-one-celebrities" href="#">Lana dek Rey</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navigation-bar m-90">
+        <!-- <a class="logo_link" href="./index.html">The Fan Site</a> -->
+        <a  href="./index.html"><img class="logo-the_fan" src="./image/Logo Marketing Agency Digital. (1).png" alt="logo"></a>
+        <ul class="container-three-celebrities">
+            <li class="container-one-celebrities"><a class="link-one-celebrities" href="#">Bob Marley</a></li>
+            <li class="container-one-celebrities"><a class="link-one-celebrities" href="#">Michael Jackson</a></li>
+            <li class="container-one-celebrities"><a class="link-one-celebrities" href="#">Lana del Rey</a></li>
+        </ul>
+        <div class="menu-burger"><i class="fa-solid fa-bars fa-2xl"></i></div>
+    </nav>
+</header>
 
     <main>
         <section>
             <!-- Intégration d'image de fond -->
             <div class="bg-entrance">
-                <h1 class="title-entrance">Micheal Jackson</h1>
+                <h1 class="title-entrance">Michael Jackson</h1>
             </div>
         </section>
 
@@ -56,8 +58,9 @@
                         <br>
                         Michael Jackson est décédé le 25 juin 2009, laissant derrière lui un vide immense dans le monde de la musique. Mais son impact perdure, et son influence continue d'inspirer des millions de fans à travers le monde. En tant que roi de la pop, il restera à jamais une légende immortelle.
                     </p>
-                    <div>
-                        <img class="mj_img" src="./image/Michael_Jackson_Dangerous_World_Tour_1993.jpg" alt="">
+                    <div class="cadre">
+                        <img class="mj_img" src="./image/Michael_Jackson_Dangerous_World_Tour_1993.jpg" alt="big-photo-Micheal">
+                        <img class="mj_img_deux m-90" src="./image/mj-2.jpg" alt="litle-photo-Micheal">
                     </div>
                 </div>
             </div>
@@ -66,7 +69,7 @@
         <!-- Sectoin sur l'actualité' de l'artiste -->
         <section>
             <div class="actuality banner">
-                <h1 class="subtitle">ACTUALILTÉ</h1>
+                <h1 class="subtitle">ACTUALITÉ</h1>
             </div>
             <div class="m-90">
                 <div class="card">
@@ -76,11 +79,11 @@
                     <div class="card__date">
                         April 15, 2022
                     </div>
-                    <div class="card__arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                    </div>
+                    <a class="card__arrow" href="./404error.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                        <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                      </svg>
+                    </a>
                 </div>
                 <div class="card">
                     <h3 class="card__title">Title
@@ -89,11 +92,11 @@
                     <div class="card__date">
                         April 15, 2022
                     </div>
-                    <div class="card__arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                    </div>
+                    <a class="card__arrow" href="./404error.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                        <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                      </svg>
+                    </a>
                 </div>
                 <div class="card">
                     <h3 class="card__title">Title
@@ -102,11 +105,11 @@
                     <div class="card__date">
                         April 15, 2022
                     </div>
-                    <div class="card__arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                    </div>
+                    <a class="card__arrow" href="./404error.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                        <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                      </svg>
+                    </a>
                 </div>
                 <div class="card">
                     <h3 class="card__title">Title
@@ -115,11 +118,11 @@
                     <div class="card__date">
                         April 15, 2022
                     </div>
-                    <div class="card__arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                    </div>
+                    <a class="card__arrow" href="./404error.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                        <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                      </svg>
+                    </a>
                 </div>
                 <div class="card">
                     <h3 class="card__title">Title
@@ -128,11 +131,11 @@
                     <div class="card__date">
                         April 15, 2022
                     </div>
-                    <div class="card__arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                    </div>
+                    <a class="card__arrow" href="./404error.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                        <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                      </svg>
+                    </a>
                 </div>
             </div>
         </section>

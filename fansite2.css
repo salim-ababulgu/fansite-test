@@ -4,10 +4,6 @@
     padding: 0;
   }
 
-/*Je déclare m-90 pour marger tout les élément à 80%*/
-.m-90 {
-    margin: 0 10%;
-}
 
 /*-------------------------NAVBAR--------------------------*/
 /* nav */
@@ -31,6 +27,11 @@ header {
 }
 
 /* LOGO */
+.logo-the_fan {
+  width: 100px;
+  height: auto;
+}
+
 .logo_link {
     font-size: 25px;
     text-decoration: none;
@@ -41,7 +42,6 @@ header {
 .logo_link:hover {
     border-bottom: 0.5px dashed #fff;
 }
-
 
 /* ul */
 .container-three-celebrities {
@@ -130,7 +130,6 @@ header {
 .mj_img {
     border-radius: 15px;
 }
-
 
 /* ACTUALILTY */
 .card {
@@ -303,9 +302,6 @@ header {
     width: 100%;
     margin-right: 20px
   }
-  div.container-ticket {
-    margin: 0 20px auto
-  }
 }
 
 
@@ -343,6 +339,7 @@ video {
 /* RÉALISATION */
 .player-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     margin-bottom: 50px;
 }
@@ -385,5 +382,167 @@ video {
 
 
 /* --------------------
-      MÉDIA QUERIS
+      MÉDIA QUERIES
    -------------------- */
+   .fa-solid {
+    color: #fff;
+   }
+   @media only screen and (min-width: 426px) {
+    /*Je déclare m-90 pour marger tout les élément à 80%*/
+    .m-90 {
+      margin: 0 10% 5%;
+    }
+
+    .menu-burger {
+      display: none;
+      cursor: pointer;
+      }
+
+
+      /* BIOGRAPHIE */
+      .mj_img_deux {
+        display: none;
+      }
+   }
+
+
+   @media only screen and (max-width: 425px) {
+    /*Je déclare m-90 pour marger tout les élément à 80%*/
+    .m-90 {
+      margin: 5% 5% 15%;
+    }
+
+
+    /* Navigation */
+    header {
+      top: 5px;
+    }
+  
+    /* Logo */
+    .logo-the_fan {
+      width: 75px;
+      height: auto;
+    }
+
+    .logo_link {
+      font-size: 20px;
+    }
+  
+    /* Link Navabar */
+    .container-three-celebrities {
+      display: none;
+    }
+
+  
+    /* Main */
+    .bg-entrance {
+      height: 80vh;
+    }
+  
+    .title-entrance {
+      font-size: 50px;
+    }
+  
+    .banner {
+      padding: 30px;
+      margin: 15px 0 15px 0;
+    }
+  
+    .subtitle {
+      font-size: 30px;
+    }
+
+    /* BIOGRAPHIE */
+
+    .biography-container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .biography-text {
+      font-size: 16px;
+      margin: -1rem 0rem 0 0;
+    }
+
+    .cadre {
+      display: flex;
+      justify-content: center;
+      overflow: auto;
+      border-radius: 15px;
+    }
+
+    .mj_img {
+      display: none;
+    }
+  
+    .card .card__content {
+      font-size: 0.8rem;
+    }
+  
+    .card .card__title {
+      font-size: 1rem;
+    }
+  
+    .card .card__date {
+      font-size: 0.7rem;
+    }
+  
+    /* Événement */
+    .container-ticket .item {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .container-ticket .item-right {
+      width: 40%;
+      padding: 50px;
+    }
+  
+    .container-ticket .item-left {
+      width: 60%;
+      padding: 20px 0 10px 20px;
+    }
+  
+    .container-ticket .item-right .num {
+      font-size: 40px;
+    }
+  
+    .container-ticket .item-right .day {
+      font-size: 20px;
+    }
+  
+    .container-ticket .item-left .title {
+      font-size: 24px;
+    }
+  
+    .container-ticket .item-left .sce, .container-ticket .item-left .loc {
+      margin-top: 3px;
+    }
+  
+    /* Galerie */
+    .galery li {
+      height: 150px;
+    }
+  
+    /* Footer */
+    .content-footer {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  
+    .footer-services h3,
+    .footer-medias h3 {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+  
+    .services-list,
+    .media-list {
+      font-size: 14px;
+    }
+  
+    .media-list {
+      right: 0;
+    }
+  }
+  
