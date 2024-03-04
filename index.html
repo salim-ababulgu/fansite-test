@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <!-- L'attribut lang spécifie la langue principale utilisée dans le document (fr pour le français) -->
 <html lang="fr">
+
     <!-- La balise <head> contient des métadonnées et des liens vers des ressources externes qui ne 
         s'afficheront pas sur le site -->
 <head>
@@ -16,18 +17,18 @@
     <!-- Lien vers la feuille de style "style.css" pour cette page html -->
     <link rel="stylesheet" href="style.css">
 
-    <!--Lien pour les Icon FontAwesome-->
+     <!-- Lien vers Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
 
     <!--Police d'écriture choisit sur Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head> 
 
-</head>
-<body>
-    <header>
-        <nav class="navigation-bar m-90">
+<body> <!-- Balise contenant le contenu de la page -->
+    <header> <!-- En-tête de la page -->
+        <nav class="navigation-bar m-90"> <!-- Barre de navigation -->
             <a  href="./index.html"><img class="logo-the_fan" src="./image/Logo Marketing Agency Digital. (1).png" alt="logo"></a>
             <ul class="container-three-celebrities">
                 <li class="container-one-celebrities"><a class="link-one-celebrities" href="fansite3.html">Bob Marley</a></li>
@@ -37,52 +38,58 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Bob Marley -->
-        <section>
+    <main> <!-- Contenu principal de la page -->
+        <section> <!-- Section sur Bob Marley -->
             <div class="container-presentation-bob_marley">
-                <div class="container-information-bob_marley">
+                <div class="container-information-bob_marley m-90">
                     <h1 class="title">Bob Marley</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae libero illum dolorem eaque natus inventore ab placeat corporis laborum vitae officia asperiores assumenda laudantium tempora possimus deleniti, harum perferendis voluptatem?</p>
-                    <a href="fansite3.html">Voir la page</a>
+                    <p class="paragraphe">Activité principale :  Auteur-compositeur-interprète et guitariste jamaïcain</p>
+                    <p class="paragraphe">Genre musical : Pop, soul, musique de danse, disco, rock, blues, rhythm and blues, funk, new jack swing, hip-hop, hard rock, urban, samba, dance-pop</p>
+                    <div class="btn-fan">
+                        <a class="btn-fan-explore" href="fansite3.html">Voir la page</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Michael Jackson -->
-        <section>
+        <section> <!-- Section sur Michael Jackson -->
             <div class="container-presentation-michael_jackson">
-                <div class="container-information-michael_jackson">
-                    <h1>Michael Jackson</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae libero illum dolorem eaque natus inventore ab placeat corporis laborum vitae officia asperiores assumenda laudantium tempora possimus deleniti, harum perferendis voluptatem?</p>
-                    <a href="fansite2.html">Voir la page</a>
+                <div class="container-information-michael_jackson m-90">
+                    <h1 class="title">Michael Jackson</h1>
+                    <p class="paragraphe">Activité principale : Auteur-compositeur-interprète, danseur-chorégraphe et acteur américain</p>
+                    <p class="paragraphe">Genre musical : Pop, Baroque-Dream, Pop-Rock, Psychédélique-Trip, Hop-Sadcore</p>
+                    <div class="btn-fan">
+                        <a class="btn-fan-explore" href="fansite2.html">Voir la page</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Lana del Rey -->
-        <section>
+        <section> <!-- Section sur Lana del Rey -->
             <div class="container-presentation-lana_del_rey">
-                <div class="container-information-lana_del_rey">
-                    <h1>Lana del Rek</h1>
-                    <p>Activité principale : Auteure-compositrice-interprète</p>
-                    <p>Genre musical : Pop Baroque-Dream Pop-Rock Psychédélique-Trip Hop-Sadcore</p>
-                    <a href="fansite1.html">Voir la page</a>
+                <div class="container-information-lana_del_rey m-90">
+                    <h1 class="title">Lana del Rek</h1>
+                    <p class="paragraphe">Activité principale : Auteure-compositrice-interprète américaine</p>
+                    <p class="paragraphe">Genre musical : Pop, Baroque-Dream, Pop-Rock, Psychédélique, Trip Hop, Sadcore</p>
+                    <div class="btn-fan">
+                        <a class="btn-fan-explore" href="fansite1.html">Voir la page</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 </body>
 
-<footer class="parallax-footer">
+<footer class="parallax-footer"> <!-- Pied de page -->
+    <!-- Conteneur du pied de page -->
     <div class="footer-container">
-        <div class="footer-content">
+        <div class="footer-content"> <!-- Contenu du pied de page -->
             <h3>À Propos :</h1>
             <p>Mentions Légales</p>
             <p>Politique de Confidentialité</p>
             <p><a style="color: #000000;" href="formulaire.html" class="internal-link">Contactez-Nous</a></p>
         </div>
-        <div class="social-content">
+        <div class="social-content"> <!-- Contenu des réseaux sociaux -->
             <h3>Nos résaux :</h1>
             <p><i class="fa-brands fa-facebook fa-lg"></i> Facebook</p>
             <p><i class="fa-brands fa-x-twitter fa-lg"></i> X (Twitter)</p>
@@ -90,6 +97,7 @@
             <p><i class="fa-brands fa-youtube fa-lg"></i> YouTube</p>
         </div>
     </div>
+    <!-- Droits d'auteur -->
     <div class="copyright">Tous droits réservés</div>
 </footer>
 
