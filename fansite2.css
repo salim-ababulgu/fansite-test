@@ -46,6 +46,7 @@ header {
 /* ul */
 .container-three-celebrities {
     display: flex;
+    text-transform: uppercase;
 }
 
 /* li */
@@ -123,11 +124,10 @@ header {
     padding: 0 5px 0 5px;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 .mj_img {
+    border-radius: 15px;
+}
+.mj_img_deux {
     border-radius: 15px;
 }
 
@@ -380,59 +380,125 @@ video {
 }
 
 
-
 /* --------------------
       MÉDIA QUERIES
    -------------------- */
    .fa-solid {
     color: #fff;
    }
-   @media only screen and (min-width: 426px) {
+   @media only screen and (min-width: 426px) { /* Supérieur a 426px */
     /*Je déclare m-90 pour marger tout les élément à 80%*/
     .m-90 {
       margin: 0 10% 5%;
     }
 
+      /* BIOGRAPHIE */
+      /* .mj_img_deux {
+        display: none;
+      } */
+   }
+
+
+    /* Média query supérieur à 769px */
+  @media only screen and (min-width: 769px) {
     .menu-burger {
       display: none;
       cursor: pointer;
       }
 
+    .mj_img_deux {
+      display: none;
+    }
 
-      /* BIOGRAPHIE */
-      .mj_img_deux {
+    .biography-container {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Masquer la barre de défilement horizontale */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+
+   /* Média query pour les écrans entre 425px et 768px */
+  @media only screen and (min-width: 425px) and (max-width: 768px) {
+      .mj_img {
         display: none;
       }
-   }
+  }
 
 
-   @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 768px) { /* Inférieur a 768px */
+        /* Navigation */
+        header {
+          top: 25px;
+        }
+
+        /* Logo */
+        .logo-the_fan {
+          width: 75px;
+          height: auto;
+        }
+
+        .logo_link {
+          font-size: 20px;
+        }
+
+        /* Link Navabar */
+        .container-three-celebrities {
+          display: none;
+        }
+
+
+      /* BIOGRAPHIE */
+      .biography-container {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    
+      .biography-text {
+        font-size: 16px;
+        margin: -1rem 0rem 0 0;
+      }
+    
+      .card .card__content {
+        font-size: 0.8rem;
+      }
+    
+      .card .card__title {
+        font-size: 1rem;
+      }
+    
+      .card .card__date {
+        font-size: 0.7rem;
+      }
+      
+      .cadre {
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+        border-radius: 15px;
+      }
+
+    .mj_img { /* Image 1*/
+      display: none;
+    }
+
+  }
+
+
+   @media only screen and (max-width: 425px) { /* Inférieur a 425px */
     /*Je déclare m-90 pour marger tout les élément à 80%*/
     .m-90 {
       margin: 5% 5% 15%;
     }
 
-
     /* Navigation */
     header {
       top: 5px;
     }
-  
-    /* Logo */
-    .logo-the_fan {
-      width: 75px;
-      height: auto;
-    }
-
-    .logo_link {
-      font-size: 20px;
-    }
-  
-    /* Link Navabar */
-    .container-three-celebrities {
-      display: none;
-    }
-
   
     /* Main */
     .bg-entrance {
@@ -445,46 +511,11 @@ video {
   
     .banner {
       padding: 30px;
-      margin: 15px 0 15px 0;
+      margin: -15px 0 15px 0;
     }
   
     .subtitle {
       font-size: 30px;
-    }
-
-    /* BIOGRAPHIE */
-
-    .biography-container {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  
-    .biography-text {
-      font-size: 16px;
-      margin: -1rem 0rem 0 0;
-    }
-
-    .cadre {
-      display: flex;
-      justify-content: center;
-      overflow: auto;
-      border-radius: 15px;
-    }
-
-    .mj_img {
-      display: none;
-    }
-  
-    .card .card__content {
-      font-size: 0.8rem;
-    }
-  
-    .card .card__title {
-      font-size: 1rem;
-    }
-  
-    .card .card__date {
-      font-size: 0.7rem;
     }
   
     /* Événement */

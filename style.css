@@ -1,17 +1,18 @@
-*, ::before, ::after {
+/* Remet à zéro tout les bordure, marges et remplissage incluse par defaut des navigateurs */
+*, ::before, ::after { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-/*Je déclare m-90 pour marger tout les élément à 80%*/
+/*Je déclare des margin 10% (m-90) pour marger tout les élément à 90%*/
 .m-90 {
     margin: 0 10%;
 }
 
-/*-------------------------NAVBAR--------------------------*/
-/* nav */
-header {
+/*------------------------- NAVBAR --------------------------*/
+
+header { /* En-tête */
     position: fixed;
     top: 15px;
     left: 0;
@@ -19,7 +20,7 @@ header {
     z-index: 3;
 }
 
-.navigation-bar {
+.navigation-bar { /* Barre de navigation */
     background: #00000080;
     display: flex;
     justify-content: space-between;
@@ -30,14 +31,12 @@ header {
     padding: 10px;
 }
 
-/* LOGO */
-
-.logo-the_fan {
+.logo-the_fan { /* Logo */
     width: 100px;
     height: auto;
   }
   
-.logo_link {
+.logo_link { /* Liens du logo */
     font-size: 25px;
     text-decoration: none;
     color: #fff;
@@ -46,12 +45,12 @@ header {
 
 
 /* ul */
-.container-three-celebrities {
+.container-three-celebrities { /* Liste des célébrités */
     display: flex;
 }
 
 /* li */
-.container-one-celebrities {
+.container-one-celebrities { /* Élément de la liste des célébrités */
     margin-left: 25px;
     list-style-type: none;
     cursor: pointer;
@@ -59,29 +58,57 @@ header {
 }
 
 /* a */
-.link-one-celebrities {
+.link-one-celebrities { /* Lien des célébrités */
     color: #fff;
     text-decoration: none;
     font-weight: bolder;
 }
 /* a */
-.link-one-celebrities:hover {
-    color: #adadad;
+.link-one-celebrities:hover {  /* Effet au survol des liens des célébrités */
+    color: #adadad; 
     text-decoration: none;
 }
 
 
-/*-------------------------MAIN--------------------------*/
-/*Bob Marley*/
-.title {
-    color: royalblue;
-  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+/*------------------------- MAIN --------------------------*/ 
+
+/* --> Bob Marley <-- */
+.title { /* Titre en background */
+    color: #fff;
+    text-shadow: 0px 5px 5px #000;
 }
 
-.container-presentation-bob_marley {
+.paragraphe {
+    text-shadow: 0px 5px 5px #000;
+    font-size: 16px;
+}
+
+.btn-fan {
+    margin-top: 25px;
+}
+
+.btn-fan-explore {
+    text-decoration: none;
+    background: #00000080;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+}
+
+.btn-fan-explore:hover {
+    backdrop-filter: blur(25px);
+    background: #ffffff77;
+    text-shadow: 0px 5px 5px #000;
+}
+
+.container-presentation-bob_marley { /* Présentation de Bob Marley */
     background: url(./image/BM-portrait.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     width: 100%;
     height: 100vh;
     color: #fff;
@@ -92,20 +119,24 @@ header {
     border-bottom: 3px solid #fff;
 }
 
-.container-information-bob_marley {
-    margin: 100px;
+.container-information-bob_marley { /* Informations sur Bob Marley */
     font-size: 20px;
     text-align: center;
     font-family: "Kanit", sans-serif;
     font-weight: 600;
+    border-radius: 25px;
+    background: hwb(0deg 0% 100% / 50%);
+    backdrop-filter: blur(5px);
+    padding: 25px;
 }
 
 
-/*Michael Jackson*/
-.container-presentation-michael_jackson {
+/* --> Michael Jackson <-- */
+.container-presentation-michael_jackson { /* Présentation de Michael Jackson */
     background: url(./image/MJ-portrait.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     width: auto;
     height: 100vh;
     color: #fff;
@@ -116,20 +147,23 @@ header {
     border-bottom: 3px solid #fff;
 }
 
-.container-information-michael_jackson {
-    margin: 100px;
+.container-information-michael_jackson { /* Informations sur Michael Jackson */
     font-size: 20px;
     text-align: center;
     font-family: "Kanit", sans-serif;
     font-weight: 600;
+    border-radius: 25px;
+    background: hwb(0deg 0% 100% / 50%);
+    backdrop-filter: blur(5px);
+    padding: 25px;
 }
 
-
-/*Lana del Rey*/
-.container-presentation-lana_del_rey {
+/* --> Lana del Rey <-- */
+.container-presentation-lana_del_rey { /* Présentation de Lana del Rey */
     background: url(./image/lana.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     width: auto;
     height: 100vh;
     color: #fff;
@@ -141,26 +175,28 @@ header {
     box-shadow: #000 0 7px 35px 0;
 }
 
-.container-information-lana_del_rey {
-    margin: 100px;
+.container-information-lana_del_rey { /* Informations sur Lana del Rey */
     font-size: 20px;
     text-align: center;
     font-family: "Kanit", sans-serif;
     font-weight: 600;
+    border-radius: 25px;
+    background: hwb(0deg 0% 100% / 50%);
+    backdrop-filter: blur(5px);
+    padding: 25px;
 }
 
-/* Style pour le main avec effet parallax */
-main {
+/*------------------------- FOTTER --------------------------*/ 
+
+main { /* Style pour le main avec effet parallax */
     position: relative;
     z-index: 2;
-    background: #F56469;
-    min-height: 1500px; /* Utilise une hauteur minimale pour assurer le défilement */
-    margin-bottom: 350px; /* Marge en bas pour éviter que le footer ne recouvre le contenu */
-    
-  }
+    background: #000;
+    min-height: 1500px; 
+    margin-bottom: 350px; 
+}
   
-  /* Style pour le footer avec effet parallax */
-  .parallax-footer {
+.parallax-footer { /* Style pour le footer avec effet parallax */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -170,10 +206,9 @@ main {
     font-size: 20px;
     color: #000;
     z-index: 1; /* Assure que le footer reste en avant-plan */
-  }
+}
   
-  /* Effet parallax */
-  .parallax-footer::before {
+.parallax-footer::before {  /* Effet parallax */
     content: "";
     position: absolute;
     top: 0;
@@ -183,16 +218,16 @@ main {
     background: inherit;
     z-index: -1;
     transform: translateZ(-1px) scale(1.5); /* Joue avec les valeurs pour ajuster l'effet */
-  }
+}
 
-  .footer-container {
+.footer-container { /* Conteneur du footer */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-  }
+}
 
-  .copyright {
+.copyright { /* Droits d'auteur */
     text-align: center;
     margin-top: 10%;
   }
